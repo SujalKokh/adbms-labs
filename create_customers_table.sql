@@ -36,3 +36,21 @@ alter table customers change organization organization_name varchar(20);
 update customers
 set first_name = 'Suzl'
 where id = 1;
+
+-- task 8: find the list of customers whose names starts with s
+select * from customers where first_name like 's%';
+
+-- task 9: find the list of customers whose name ends with s
+select * from customers where first_name like '%s';
+
+-- task 10: find the list of customers whose name contains s
+select * from customers where first_name like '%s%';
+
+-- task 11: find the list of customers whose names starts with p
+select * from customers where first_name like 'p%';
+
+-- task 12: find the list of customers whose name ends with k
+select * from customers where first_name like '%p';
+
+-- task 13: find the list of customers whose name contains p
+select * from customers where first_name like '%p%';
